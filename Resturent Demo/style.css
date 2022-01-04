@@ -1,0 +1,397 @@
+   
+   
+    html{
+        scroll-behavior: smooth;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #eee;
+    }
+
+    .container{
+        max-width: 100%;
+        margin: auto;
+
+        /* font-family: 'Handlee', cursive;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto', sans-serif; */
+    } 
+    
+     .row{
+         width: 100%;
+     }
+
+    .row::after{
+        content: '';
+         clear: both;
+          display: table;
+    }
+
+
+    [class*="col-"]{
+        width: 100%;
+    }
+
+
+    [class*="col-"]{
+        float: left;
+         padding: 10px;
+    }
+
+    
+    /* min screen tablet and large phone 576px */
+    @media (min-width: 576px) {
+        /* For small screen: */
+        .col-sm-1 {width: 8.33%;}
+        .col-sm-2 {width: 16.66%;}
+        .col-sm-3 {width: 25%;}
+        .col-sm-4 {width: 33.33%;}
+        .col-sm-5 {width: 41.66%;}
+        .col-sm-6 {width: 50%;}
+        .col-sm-7 {width: 58.33%;}
+        .col-sm-8 {width: 66.66%;}
+        .col-sm-9 {width: 75%;}
+        .col-sm-10 {width: 83.33%;}
+        .col-sm-11 {width: 91.66%;}
+        .col-sm-12 {width: 100%;}
+       }
+
+
+    /* medium screen tablet and large phone 768px */
+    @media (min-width: 768px) {
+        /* For medium screen: */
+        .col-md-1 {width: 8.33%;}
+        .col-md-2 {width: 16.66%;}
+        .col-md-3 {width: 25%;}
+        .col-md-4 {width: 33.33%;}
+        .col-md-5 {width: 41.66%;}
+        .col-md-6 {width: 50%;}
+        .col-md-7 {width: 58.33%;}
+        .col-md-8 {width: 66.66%;}
+        .col-md-9 {width: 75%;}
+        .col-md-10 {width: 83.33%;}
+        .col-md-11 {width: 91.66%;}
+        .col-md-12 {width: 100%;}
+       }
+
+
+     /*  large tablet and large phone 992px */
+     @media (min-width: 992px) {
+
+        .header-img .logo{
+            text-align: left;
+        }
+
+        nav ul{
+            text-align: right;
+            
+        }
+
+        nav ul li {
+            display: inline-block;
+             margin:  0px 20px ; 
+        }
+
+        nav ul li a{
+            display: inline-block;
+        }
+
+        nav ul li a:hover{
+            background: none;
+        }
+
+        /* banner section start */
+        #banner-section{
+            position: relative;
+             height: 100vh;
+              background-size: cover;     
+        }
+
+        .banner-contains{
+            position: absolute;
+             text-align: center;
+              top: 50%;
+               left: 50%;
+                transform: translate(-50%, -50%);
+        }
+        /* banner section ends */
+
+    
+        /* For desktop: */
+        .col-lg-1 {width: 8.33%;}
+        .col-lg-2 {width: 16.66%;}
+        .col-lg-3 {width: 25%;}
+        .col-lg-4 {width: 33.33%;}
+        .col-lg-5 {width: 41.66%;}
+        .col-lg-6 {width: 50%;}
+        .col-lg-7 {width: 58.33%;}
+        .col-lg-8 {width: 66.66%;}
+        .col-lg-9 {width: 75%;}
+        .col-lg-10 {width: 83.33%;}
+        .col-lg-11 {width: 91.66%;}
+        .col-lg-12 {width: 100%;}
+       }
+
+
+    /* header design start form here */
+    .header{
+        background-color: #34a19c;
+         padding: 10px 50px;
+          text-align: center;
+        
+      }
+
+    .logo{
+        color: white;
+         border: 2px solid white;
+          padding: 10px;
+           width: 70px;
+            height: 70px;
+             border-radius: 50%;
+              text-align: center;
+             
+      }
+
+    /* nav{
+        display: block;
+      } */
+
+    nav ul li a{
+        display: block;
+         color: white;
+          line-height: 70px;
+           text-decoration: none;
+            text-transform: uppercase;
+             font-size: 0.9rem;
+              font-family: 'Roboto', sans-serif;
+               transition: 0.4;
+                
+       }
+
+       nav ul li{
+           list-style-type: none;
+       }
+
+    nav ul li a:hover{
+        background-color: rgb(0,0,0,0.5);
+         border-radius: 10px;
+      }
+   /* header design start form here */
+     
+
+   /* banner section design start form here */
+     #banner-section{
+         background-image: url(Images/Restuarant-banner.jpg);
+          background-repeat: no-repeat;
+           background-attachment: fixed;
+            background-position: center;
+             background-size: cover;
+            
+       }
+
+     .banner-contains{
+         padding: 50px 10px;
+          text-align: center;
+       }
+
+     .banner-contains h1{
+        background-color: #ffff00c4;
+          max-width: 1150px;
+           margin: 0 auto;
+            border-radius: 5px;
+             font-size: 3rem;
+              padding: 10px;
+               font-family: 'Handlee', cursive;
+          }
+
+     .banner-contains p{
+         width: 300px;
+          background-color: rgba(255, 31, 210, 0.8);
+           margin: 10px auto;
+            color: white;
+             font-size: 2rem;
+              border-radius: 10px;
+               font-family: 'Montserrat', sans-serif;
+
+          }
+
+     .banner-contains .btn{
+
+         width: 150px;
+          border: none;
+           padding: 10px;
+            font-size: 1.5rem;
+             background-color: green;
+              border-radius: 10px;
+               color: white;
+                cursor: pointer;
+                 transition: .4s;
+                  margin-top: 10px;
+                   font-family: Arial, Helvetica, sans-serif;
+          }
+
+     .banner-contains .btn:hover{
+          transform: scale(1.2);
+     }
+   /* banner section design ends form here */
+
+
+    /* about section design start */
+     .about-us-contains{
+         text-align: center;
+          max-width: 1123px;
+           margin: 0 auto;
+            background: rgb(230, 230, 230);
+             padding: 10px;
+              border-radius: 10px;
+               margin-top: 20px;
+     }
+
+     .about-us-contains h1{
+        font-family: 'Roboto', sans-serif;
+         font-size: 2rem;
+     }
+
+     .about-us-contains p{
+        font-family: 'Roboto', sans-serif;
+        line-height: 25px;
+     }
+     
+
+    /* about section design ends */
+
+    /* card design start */
+     .card{
+         padding: 10px;
+          text-align: center;
+           cursor: pointer;
+            transition: 0.4s;
+             margin-top: 20px;
+     } 
+
+     .card:hover{
+         transform: scale(1.05);
+     }
+
+     .card-body img{
+         width: 100%;
+         height: 400px;
+         display: block;
+     }
+     .Item-desc{
+         background-color: rgb(160, 160, 160);
+         
+     }
+
+     .Item-desc .Item-name{
+         background-color: indigo;
+         color: white;
+         padding: 5px;
+         font-family: 'Roboto', sans-serif;
+         font-size: 1.5rem;
+         
+     }
+
+     .Item-desc > p{
+        font-family: 'Montserrat', sans-serif;
+        line-height: 25px;
+     }
+
+    /* card design ends */
+
+
+    /* contact section design start from here */
+     
+     #contact{
+         background-color: #34A19C;
+          max-width: 100%;
+           margin-top: 20px;
+     }
+
+     .map{
+         width: 100%;
+          height: 300px;
+     }
+
+     .contact-details{
+         background-color: rgb(211, 211, 211);
+          padding: 10px;
+           max-width: 100%;
+            height: 300px;
+            line-height: 30px;
+     }
+
+     .contact-details h5{
+         color: rgb(0, 0, 0);
+          font-size: 1.2rem;
+           font-family: 'Roboto', sans-serif;
+     }
+
+     .contact-details p{
+         color: rgb(0, 0, 0);
+         font-family: arial;
+         
+     }
+
+     .contact-details h1{
+        font-family: 'Handlee', cursive;
+         color: white;
+          background-color: indigo;
+           text-align: center;
+            padding: 5px;
+             border-radius: 5px;
+     }
+
+    /* contact section design ends from here */
+
+
+
+    /* footer section design start form here */
+    .footer{
+        background-color: rgb(0, 0, 0);
+          width: 100%;
+           height: auto;
+    }
+
+    .social-menu{
+        /* background: rgb(231, 231, 231); */
+         height: auto;
+          padding: 10px;
+           border-radius: 10px;
+            text-align: center;
+              margin: 0 auto;
+               transition: 0.4s;
+                transition-timing-function: linear;
+    }
+     
+    .footer p {
+        color: white;
+         text-align: center;
+          font-family: 'Roboto', sans-serif;
+           font-size: 1.5rem;
+          
+    }
+
+    .social-menu a i{
+        margin: 0 5px;
+         border: 2px solid black;
+          padding: 5px;
+           border-radius: 20px;
+            background-color: white;
+             font-size: 2.2rem;
+              
+    }
+
+    .social-menu a i:hover{
+        transform: scale(1.2);
+    }
+    
+    /* footer section design ends form here */
+
+    
